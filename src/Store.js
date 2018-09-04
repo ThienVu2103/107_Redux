@@ -2,10 +2,6 @@ import numReducer from './reducers/NumReducer';
 import editStatusReducer from './reducers/EditStatusReducer';
 
 var redux = require('redux');
-var oldState = {
-    num: ["man hinh", 'chuot', "ban phims"],
-    editStatus: false
-}
 
 const allReducer = redux.combineReducers({
     num: numReducer, // there are 2 types of reducer separated to 2 files
